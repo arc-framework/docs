@@ -1,0 +1,76 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Grant the GITHUB_TOKEN permissions to write to gh-pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# CORRECT CONCURRENCY:
+# This is our logic. It cancels stale, in-progress builds.
+# We do not deploy broken code. Ever.
+concurrency:
+  group: 'pages'
+  cancel-in-progress: true
+
+jobs:
+  # JOB 1: Build the static site
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 1. Check out repository
+        uses: actions/checkout@v4
+
+      - name: 2. Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20 # Fine. 18+ is the requirement.
+          # We do NOT cache 'yarn'. That's not a thing here.
+
+      # THIS IS THE A.R.C. STACK:
+      - name: 3. Set up pnpm
+        uses: pnpm/action-setup@v3
+        with:
+          version: 8 # Or 9. Just be consistent.
+
+      - name: 4. Get pnpm cache directory
+        id: pnpm-cache
+        shell: bash
+        run: echo "dir=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - name: 5. Setup pnpm cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ steps.pnpm-cache.outputs.dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
+      - name: 6. Install dependencies (The Right Way)
+        run: pnpm install --frozen-lockfile # CI best practice
+
+      - name: 7. Build the static site
+        run: pnpm build
+
+      - name: 8. Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./build # Docusaurus builds to this directory
+
+  # JOB 2: Deploy the built artifact
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build # This job WAITS for the 'build' job to succeed
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        # This action automatically grabs the artifact from 'build'
