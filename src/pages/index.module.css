@@ -20,4 +20,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 1rem 1rem;
+  gap: 1rem;
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.sectionAlt {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.sectionText {
+  font-size: 1.1rem;
+}
+
+.useCaseCard {
+  height: 100%;
+}
+
+.gettingStartedCol {
+  display: flex;
+}
+
+.gettingStartedCard {
+  width: 100%;
+}
+
+.codeBlock {
+  position: relative;
+}
+
+.copyButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+
+.docButton {
+  margin-top: 1rem;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
 }

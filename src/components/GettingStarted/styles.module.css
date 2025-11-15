@@ -1,0 +1,19 @@
+.section {
+  padding: 4rem 0;
+}
+
+.gettingStartedCol {
+  margin: 0 auto;
+}
+
+.gettingStartedCard {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.gettingStartedCard:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.docButton {
+  margin-top: 1rem;
+}

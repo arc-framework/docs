@@ -23,21 +23,81 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Platform-in-a-Box',
-    Svg: require('./undraw_product_box.svg').default,
+    Svg: require('./undraw_container.svg').default,
     description: (
       <>
-        Get auth, secrets, messaging, and observability out of the box, not as
-        an afterthought. Batteries included.
+        A.R.C. provides foundational services like auth, messaging, and
+        observability out of the box, so you can focus on building.
       </>
     ),
   },
   {
     title: 'Modular & Pluggable',
-    Svg: require('./undraw_building_blocks.svg').default,
+    Svg: require('./undraw_version_control.svg').default,
     description: (
       <>
-        Built on open standards like OpenFeature and OpenTelemetry, so you're
-        never locked into a single vendor.
+        Built on open standards, A.R.C. is designed to be flexible and
+        extensible, allowing you to bring your own tools.
+      </>
+    ),
+  },
+  {
+    title: 'Polyglot Architecture',
+    Svg: require('./undraw_polyglot.svg').default,
+    description: (
+      <>
+        Best of all worlds: high-performance Go CLI and gateway, powerful Python
+        AI ecosystem. Use the right tool for each job.
+      </>
+    ),
+  },
+  {
+    title: 'Cloud-Native',
+    Svg: require('./undraw_cloud_native.svg').default,
+    description: (
+      <>
+        Built with cloud-native patterns, fully containerized, horizontally
+        scalable, and ready for any deployment environment.
+      </>
+    ),
+  },
+  {
+    title: 'Event-Driven',
+    Svg: require('./undraw_event_driven.svg').default,
+    description: (
+      <>
+        Durable streaming with Apache Pulsar and ephemeral messaging with NATS
+        for real-time, distributed intelligence.
+      </>
+    ),
+  },
+  {
+    title: 'Distributed Intelligence',
+    Svg: require('./undraw_connected_world.svg').default,
+    description: (
+      <>
+        A.R.C. is the scalable backbone for creating and orchestrating powerful
+        AI agents and intelligent systems.
+      </>
+    ),
+  },
+  {
+    title: 'Stateful Agents',
+    Svg: require('./undraw_stateful.svg').default,
+    description: (
+      <>
+        Long-term memory and persistence with PostgreSQL + pgvector for agents
+        that remember and learn over time.
+      </>
+    ),
+  },
+  {
+    title: 'Self-Hosted',
+    Svg: require('./undraw_self_hosted.svg').default,
+    description: (
+      <>
+        Complete control over your data and infrastructure. Privacy-first with
+        no vendor lock-in or external dependencies.
       </>
     ),
   },
@@ -45,7 +105,7 @@ const FeatureList: FeatureItem[] = [
 
 function Feature({ title, Svg, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
+    <div className={clsx('col col--4', styles.featureItem)}>
       <div className='text--center'>
         <Svg className={styles.featureSvg} role='img' />
       </div>

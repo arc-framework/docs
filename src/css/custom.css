@@ -15,9 +15,19 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Custom variables */
+  --arc-background-color: #f7fafc;
+  --arc-dark-background-color: #1a202c;
+  --arc-card-background-color: #ffffff;
+  --arc-dark-card-background-color: #2d3748;
+  --arc-font-color: #2d3748;
+  --arc-dark-font-color: #f7fafc;
+  --arc-primary-color: #4299e1;
+  --arc-secondary-color: #4a5568;
+  --arc-dark-secondary-color: #a0aec0;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -27,4 +37,22 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* Custom variables */
+  --arc-background-color: var(--arc-dark-background-color);
+  --arc-card-background-color: var(--arc-dark-card-background-color);
+  --arc-font-color: var(--arc-dark-font-color);
+  --arc-secondary-color: var(--arc-dark-secondary-color);
 }
+
+.button--secondary {
+  --ifm-button-background-color: var(--arc-primary-color);
+  --ifm-button-color: white;
+  --ifm-button-border-color: var(--arc-primary-color);
+}
+
+.button--secondary:hover {
+  --ifm-button-background-color: #2b6cb0;
+  --ifm-button-border-color: #2b6cb0;
+}
+
