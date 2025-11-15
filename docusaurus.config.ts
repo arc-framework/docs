@@ -16,14 +16,11 @@ const config: Config = {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
   },
 
-  // Set the production url of your site here
-  url: 'https://dgtalbug.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://arc-framework.github.io',
   baseUrl: '/arc-docs/',
 
   // GitHub pages deployment config.
-  organizationName: 'dgtalbug', // Usually your GitHub org/user name.
+  organizationName: 'arc-framework',
   projectName: 'arc-docs', // Usually your repo name.
 
   onBrokenLinks: 'throw',
