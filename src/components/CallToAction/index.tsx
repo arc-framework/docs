@@ -6,18 +6,25 @@ import Heading from '@theme/Heading';
 
 import styles from './styles.module.css';
 
-export default function GettingStarted(): React.JSX.Element {
+export default function CallToAction(): React.JSX.Element {
   return (
     <section className={styles.section}>
       <div className='container'>
-        <Heading as='h2' className='text--center margin-bottom--lg'>
-          Get Up and Running in Minutes
-        </Heading>
+        <div className='row'>
+          <div className='col col--12 text--center margin-bottom--lg'>
+            <Heading as='h3' className={styles.sectionSubtitle}>
+              Get Up and Running in Minutes
+            </Heading>
+            <p className={styles.subtitle}>
+              Start building production-ready AI systems today
+            </p>
+          </div>
+        </div>
         <div className='row'>
           <div className={clsx('col col--6', styles.gettingStartedCol)}>
             <div className={clsx('card', styles.gettingStartedCard)}>
               <div className='card__header'>
-                <Heading as='h3'> Explore the Docs</Heading>
+                <Heading as='h3'>Explore the Docs</Heading>
               </div>
               <div className='card__body'>
                 <p>

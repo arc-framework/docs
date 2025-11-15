@@ -11,7 +11,7 @@ type UseCaseItem = {
   description: string;
 };
 
-const useCases: UseCaseItem[] = [
+const USE_CASES: UseCaseItem[] = [
   {
     title: 'Build AI Agents',
     Svg: require('./undraw_artificial_intelligence.svg').default,
@@ -54,17 +54,19 @@ export default function UseCases(): React.JSX.Element {
   return (
     <section className={clsx(styles.section, styles.sectionAlt)}>
       <div className='container'>
-        <Heading as='h2' className='text--center margin-bottom--lg'>
-          Powerful Use Cases
-        </Heading>
         <div className='row'>
-          {useCases.map((useCase, idx) => (
-            <UseCase
-              key={idx}
-              title={useCase.title}
-              Svg={useCase.Svg}
-              description={useCase.description}
-            />
+          <div className='col col--12 text--center margin-bottom--lg'>
+            <Heading as='h3' className={styles.sectionSubtitle}>
+              Powerful Use Cases
+            </Heading>
+            <p className={styles.subtitle}>
+              See how A.R.C. powers real-world applications
+            </p>
+          </div>
+        </div>
+        <div className='row'>
+          {USE_CASES.map((item, idx) => (
+            <UseCase key={idx} {...item} />
           ))}
         </div>
       </div>

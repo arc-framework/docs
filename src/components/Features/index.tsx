@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import React from 'react';
 
 import Heading from '@theme/Heading';
 
@@ -10,7 +11,7 @@ type FeatureItem = {
   description: React.JSX.Element;
 };
 
-const FeatureList: FeatureItem[] = [
+const FEATURE_LIST: FeatureItem[] = [
   {
     title: 'Truly Open-Source',
     Svg: require('./undraw_open_source.svg').default,
@@ -117,12 +118,22 @@ function Feature({ title, Svg, description }: FeatureItem) {
   );
 }
 
-export default function HomepageFeatures(): React.JSX.Element {
+export default function Features(): React.JSX.Element {
   return (
     <section className={styles.features}>
       <div className='container'>
         <div className='row'>
-          {FeatureList.map((props, idx) => (
+          <div className='col col--12 text--center margin-bottom--lg'>
+            <Heading as='h3' className={styles.sectionSubtitle}>
+              Why Choose A.R.C.?
+            </Heading>
+            <p className={styles.subtitle}>
+              The complete platform for building production-ready AI agents
+            </p>
+          </div>
+        </div>
+        <div className='row'>
+          {FEATURE_LIST.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
