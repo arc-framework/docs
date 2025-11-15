@@ -14,21 +14,6 @@ The persistence layer provides relational database storage with vector search ca
 
 ---
 
-## Implementation
-
-### [PostgreSQL](./postgres/)
-
-**Status:** ✅ Active  
-**Type:** Relational database with vector extensions
-
-- ACID transactions
-- pgvector extension for RAG/embeddings
-- JSONB support for flexible schemas
-- Full-text search
-- Mature replication and backup tools
-
----
-
 # PostgreSQL
 
 **Status:** ✅ Active  
@@ -64,7 +49,7 @@ POSTGRES_PORT=5432
 
 ### Initialization
 
-The database is automatically initialized using [`init.sql`](./init.sql) on first startup. This script:
+The database is automatically initialized using `init.sql` on first startup. This script:
 
 - Sets up initial schemas
 - Installs extensions (pgvector)

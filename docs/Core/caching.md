@@ -20,22 +20,7 @@ The caching layer provides high-performance, in-memory data storage for:
 
 ---
 
-## Implementation
-
-### [Redis](./redis/)
-
-**Status:** ✅ Active  
-**Type:** In-memory data store
-
-- Sub-millisecond access times
-- Rich data structures (strings, hashes, lists, sets, sorted sets)
-- Optional persistence (RDB, AOF)
-- Pub/sub messaging
-- Lua scripting support
-
----
-
-# Redis - Cache & Session Store
+## Redis - Cache & Session Store
 
 In-memory data store for caching, sessions, and real-time data.
 

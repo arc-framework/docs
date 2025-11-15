@@ -10,18 +10,6 @@ Distributed tracing storage and visualization backends.
 
 Tracing storage plugins receive traces from the OpenTelemetry Collector and provide trace visualization and analysis.
 
-## Active Implementation
-
-### [Jaeger](./jaeger/)
-
-**Status:** ✅ Active  
-**Type:** Distributed tracing platform
-
-- OTLP native support
-- Service dependency graphs
-- Trace search and filtering
-- Performance analysis
-
 ---
 
 # Jaeger - Distributed Tracing

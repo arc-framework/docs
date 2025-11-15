@@ -18,20 +18,6 @@ The gateway layer provides:
 
 ---
 
-## Implementations
-
-### [Traefik](./traefik/)
-
-**Status:** ✅ Active  
-**Type:** Cloud-native API Gateway
-
-- Automatic service discovery via Docker labels
-- Dynamic configuration
-- Let's Encrypt support
-- Dashboard for monitoring
-
----
-
 # Traefik
 
 **Status:** ✅ Active  
@@ -56,7 +42,7 @@ Traefik serves as the API gateway and reverse proxy for the A.R.C. Framework, pr
 
 ### Static Configuration
 
-The static configuration is defined in [`traefik.yml`](./traefik.yml):
+The static configuration is defined in `traefik.yml`:
 
 - **Entry Points**: HTTP (`:80`) and HTTPS (`:443`)
 - **API Dashboard**: Enabled for monitoring (insecure mode for local dev)

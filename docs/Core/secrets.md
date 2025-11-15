@@ -20,22 +20,6 @@ The secrets layer provides secure storage and management of sensitive configurat
 
 ---
 
-## Implementation
-
-### [Infisical](./infisical/)
-
-**Status:** ✅ Active  
-**Type:** Self-hosted secrets management platform
-
-- End-to-end encrypted secret storage
-- Version history and rollback
-- Role-based access control (RBAC)
-- Multiple environment support
-- SDK and CLI for secret injection
-- Audit logging
-
----
-
 # Infisical
 
 **Status:** ✅ Active  

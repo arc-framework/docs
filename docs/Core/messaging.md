@@ -19,7 +19,7 @@ The A.R.C. Framework uses **two messaging systems** for different purposes:
 
 ## Categories
 
-### [Ephemeral](./ephemeral/)
+### Ephemeral
 
 **Purpose:** Real-time agent-to-agent communication
 
@@ -28,9 +28,9 @@ The A.R.C. Framework uses **two messaging systems** for different purposes:
 - Pub/sub, request/reply, queue groups
 - Ideal for: coordination, job queues, heartbeats
 
-**Implementation:** [NATS](./ephemeral/nats/)
+**Implementation:** NATS
 
-### [Durable](./durable/)
+### Durable
 
 **Purpose:** Event streaming and "Conveyor Belt" pattern
 
@@ -39,7 +39,7 @@ The A.R.C. Framework uses **two messaging systems** for different purposes:
 - Guaranteed delivery
 - Ideal for: event sourcing, audit logs, CDC
 
-**Implementation:** [Apache Pulsar](./durable/pulsar/)
+**Implementation:** Apache Pulsar
 
 ---
 
@@ -79,21 +79,9 @@ Real-time, low-latency messaging for agent-to-agent communication.
 
 Ephemeral messaging provides fast, memory-based message delivery without persistence. Messages are delivered in real-time and are not stored.
 
-## Implementation
-
-### [NATS](./nats/)
-
-**Status:** ✅ Active  
-**Type:** Lightweight message broker
-
-- Sub-millisecond latency
-- Pub/sub and request/reply patterns
-- Queue groups for load balancing
-- No persistence (memory only)
-
 ---
 
-# NATS - Ephemeral Messaging
+# NATS - Ephemeral Messaging {#nats-ephemeral-messaging}
 
 Lightweight message broker for real-time agent-to-agent communication.
 
@@ -194,21 +182,7 @@ Durable messaging provides persistent storage of events with replay capabilities
 
 ---
 
-## Implementation
-
-### [Apache Pulsar](./pulsar/)
-
-**Status:** ✅ Active  
-**Type:** Distributed event streaming platform
-
-- Persistent event storage
-- Event replay and time-travel
-- Guaranteed delivery (at-least-once, exactly-once)
-- Multi-tenancy and geo-replication
-
----
-
-# Apache Pulsar - Durable Messaging
+# Apache Pulsar - Durable Messaging {#apache-pulsar-durable-messaging}
 
 Event streaming platform for durable, persistent messaging (the "Conveyor Belt").
 

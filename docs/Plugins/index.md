@@ -16,11 +16,11 @@ Plugins provide additional functionality that isn't core to the framework. They 
 
 ## Plugin Categories
 
-### [Security](./security/)
+### [Security](./auth.md)
 
 Security and identity management
 
-#### [Identity](./security/identity/)
+#### [Identity](./auth.md)
 
 Authentication and user management (optional)
 
@@ -28,46 +28,46 @@ Authentication and user management (optional)
 - **Purpose**: User authentication, identity provider
 - **Note**: Framework works without this for agent-to-agent scenarios
 
-### [Observability](./observability/)
+### [Observability](#observability)
 
 Monitoring and observability backends
 
-#### [Logging](./observability/logging/)
+#### [Logging](./Observability/loki.md)
 
 Log storage and querying
 
 - **Options**: Loki, Elasticsearch, Splunk
 - **Purpose**: Store and search logs from OTel Collector
 
-#### [Metrics](./observability/metrics/)
+#### [Metrics](./Observability/metrics.md)
 
 Metrics storage and querying
 
 - **Options**: Prometheus, InfluxDB, Datadog
 - **Purpose**: Store and query metrics from OTel Collector
 
-#### [Tracing](./observability/tracing/)
+#### [Tracing](./Observability/tracing.md)
 
 Distributed tracing storage
 
 - **Options**: Jaeger, Zipkin, Tempo
 - **Purpose**: Store and visualize traces from OTel Collector
 
-#### [Visualization](./observability/visualization/)
+#### [Visualization](./Observability/visualization.md)
 
 Dashboards and visualization
 
 - **Options**: Grafana, Kibana
 - **Purpose**: Unified dashboards for metrics, logs, traces
 
-### [Storage](./storage/)
+### [Storage](./storage.md)
 
 Object storage for artifacts
 
 - **Options**: MinIO, S3, GCS, Azure Blob
 - **Purpose**: Store agent artifacts, documents, generated files
 
-### [Search](./search/)
+### [Search](./search.md)
 
 Full-text search engines
 
@@ -169,32 +169,32 @@ Observability plugins provide backends for storing and visualizing telemetry dat
 
 ## Categories
 
-### [Logging](./logging/)
+### [Logging](./Observability/loki.md)
 
 Log storage and querying backends
 
-- **Active:** [Loki](./logging/loki/)
+- **Active:** [Loki](./Observability/loki.md)
 - **Alternatives:** Elasticsearch, Splunk, CloudWatch
 
-### [Metrics](./metrics/)
+### [Metrics](./Observability/metrics.md)
 
 Metrics storage and querying backends
 
-- **Active:** [Prometheus](./metrics/prometheus/)
+- **Active:** [Prometheus](./Observability/metrics.md)
 - **Alternatives:** InfluxDB, Datadog, Victoria Metrics
 
-### [Tracing](./tracing/)
+### [Tracing](./Observability/tracing.md)
 
 Distributed tracing storage and visualization
 
-- **Active:** [Jaeger](./tracing/jaeger/)
+- **Active:** [Jaeger](./Observability/tracing.md)
 - **Alternatives:** Zipkin, Tempo, Lightstep
 
-### [Visualization](./visualization/)
+### [Visualization](./Observability/visualization.md)
 
 Dashboards and unified visualization
 
-- **Active:** [Grafana](./visualization/grafana/)
+- **Active:** [Grafana](./Observability/visualization.md)
 - **Alternatives:** Kibana, Datadog dashboards
 
 ---

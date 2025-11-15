@@ -16,22 +16,22 @@ Core services provide foundational capabilities that all other services depend o
 
 ## Core Service Categories
 
-### [Gateway](./gateway/)
+### [Gateway](./gateway.md)
 
 API Gateway and service mesh
 
-#### [Traefik](./gateway/traefik/)
+#### [Traefik](./gateway.md)
 
 - **Purpose:** API Gateway, reverse proxy, automatic service discovery
 - **Port:** 80 (HTTP), 443 (HTTPS), 8080 (Dashboard)
 - **Config:** `traefik.yml`
 - **Status:** ✅ Configured
 
-### [Telemetry](./telemetry/)
+### [Telemetry](./telemetry.md)
 
 Observability pipeline
 
-#### [OpenTelemetry Collector](./telemetry/)
+#### [OpenTelemetry Collector](./telemetry.md)
 
 - **Purpose:** Unified telemetry collection hub (logs, metrics, traces)
 - **Port:** 4317 (gRPC), 4318 (HTTP), 13133 (health)
@@ -39,29 +39,29 @@ Observability pipeline
 - **Status:** ✅ Configured
 - **Note:** Custom-built with health check endpoint
 
-### [Messaging](./messaging/)
+### [Messaging](./messaging.md)
 
 Event and message distribution
 
-#### [Ephemeral - NATS](./messaging/ephemeral/nats/)
+#### [Ephemeral - NATS](./messaging.md)
 
 - **Purpose:** Agent-to-agent messaging, job queues, pub/sub
 - **Port:** 4222 (client), 8222 (monitoring)
 - **Status:** ✅ Configured
 - **Use Case:** Real-time agent communication
 
-#### [Durable - Pulsar](./messaging/durable/pulsar/)
+#### [Durable - Pulsar](./messaging.md)
 
 - **Purpose:** Event streaming "Conveyor Belt", durable event log
 - **Port:** 6650 (broker), 8080 (HTTP)
 - **Status:** ✅ Configured
 - **Use Case:** Event sourcing, cross-service events
 
-### [Persistence](./persistence/)
+### [Persistence](./persistence.md)
 
 Data storage
 
-#### [Postgres](./persistence/postgres/)
+#### [Postgres](./persistence.md)
 
 - **Purpose:** Primary database, agent state, vector storage (pgvector)
 -- **Port:** 5432
@@ -69,32 +69,32 @@ Data storage
 - **Status:** ✅ Configured
 - **Extensions:** pgvector for RAG/embeddings
 
-### [Caching](./caching/)
+### [Caching](./caching.md)
 
 In-memory data store
 
-#### [Redis](./caching/redis/)
+#### [Redis](./caching.md)
 
 - **Purpose:** Cache, sessions, rate limiting, temporary data
 - **Port:** 6379
 - **Status:** ✅ Configured
 
-### [Secrets](./secrets/)
+### [Secrets](./secrets.md)
 
 Secrets management
 
-#### [Infisical](./secrets/infisical/)
+#### [Infisical](./secrets.md)
 
 - **Purpose:** Self-hosted secrets vault
 - **Port:** 3001
 - **Status:** ✅ Configured in stack
 - **Note:** Optional for development, required for production
 
-### [Feature Management](./feature-management/)
+### [Feature Management](./feature-flag.md)
 
 Feature flags and A/B testing
 
-#### [Unleash](./feature-management/unleash/)
+#### [Unleash](./feature-flag.md)
 
 - **Purpose:** Feature flags, experiments, gradual rollouts
 - **Port:** 4242

@@ -10,18 +10,6 @@ Metrics storage and querying backends.
 
 Metrics storage plugins receive metrics from the OpenTelemetry Collector and provide time-series database capabilities.
 
-## Active Implementation
-
-### [Prometheus](./prometheus/)
-
-**Status:** ✅ Active  
-**Type:** Time-series database
-
-- PromQL query language
-- Pull-based scraping model
-- Native Grafana integration
-- CNCF graduated project
-
 ---
 
 # Prometheus - Metrics Storage
