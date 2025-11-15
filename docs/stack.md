@@ -7,6 +7,12 @@ title: Components
 
 The Agentic Reasoning Core (A.R.C.) is an open-source, modular, Platform-in-a-Box designed as a distributed intelligence orchestration engine. Our technology choices reflect our commitment to open standards, developer experience, and robust, scalable systems.
 
+This page provides a high-level overview of the components that make up the A.R.C. stack. For more detailed information, please see the [Core Services](./Core/index.md) and [Plugins](./Plugins/index.md) pages.
+
+---
+
+## Quick Reference
+
 Below is the quick reference guide to the A.R.C. stack.
 
 ### Platform
@@ -41,3 +47,35 @@ Below is the quick reference guide to the A.R.C. stack.
 - **Metrics**: [Prometheus](https://prometheus.io/)
 - **Traces**: [Jaeger](https://www.jaegertracing.io/)
 - **UI**: [Grafana](https://grafana.com/oss/grafana/)
+
+---
+
+## Core vs. Plugins
+
+The A.R.C. framework is divided into two main categories of components: **Core Services** and **Plugins**.
+
+### Core Services
+
+**Core Services** are the essential components that the A.R.C. Framework depends on. These services are mandatory for the framework to operate and have deep integration points throughout the system.
+
+A component is considered **core** if:
+
+- ✅ The framework breaks without it.
+- ✅ It has deep integration with multiple services.
+- ✅ It is required by the agent architecture.
+- ✅ There is no reasonable alternative for the use case.
+
+[**Learn more about Core Services →**](./Core/index.md)
+
+### Plugins
+
+**Plugins** are optional components that extend the A.R.C. Framework. They can be added, removed, or swapped with alternatives without breaking the core functionality of the framework.
+
+A component is considered a **plugin** if:
+
+- ✅ The framework works without it.
+- ✅ Multiple alternatives exist.
+- ✅ It can be swapped at runtime.
+- ✅ It is only needed for specific deployments.
+
+[**Learn more about Plugins →**](./Plugins/index.md)
