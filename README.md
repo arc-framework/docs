@@ -1,14 +1,26 @@
-# Website
+<p align="center">
+  <a href="https://github.com/arc-framework">
+    <img src="https://raw.githubusercontent.com/arc-framework/.github/main/assets/arc-icon.png" alt="A.R.C. Logo" width="100">
+  </a>
+</p>
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+<h1 align="center">
+  A.R.C. Documentation
+</h1>
 
-## Installation
+This repository contains the source code for the official A.R.C. (Agentic Reasoning Core) documentation website.
+
+The site is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+
+## Development
+
+First, make sure you have your dependencies installed.
 
 ```bash
-yarn
+yarn install
 ```
 
-## Local Development
+Then, to start a local development server:
 
 ```bash
 yarn start
@@ -16,26 +28,4 @@ yarn start
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## Build
-
-```bash
-yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-## Deployment
-
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+A.R.C. is a Docusaurus project, which is based on React. You know, the JavaScript library for building user interfaces. Just in case you forgot.
