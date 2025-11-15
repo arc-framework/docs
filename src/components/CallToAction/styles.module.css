@@ -1,0 +1,50 @@
+.section {
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.gettingStartedCol {
+  margin: 0 auto;
+}
+
+.gettingStartedCard {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: var(--ifm-color-emphasis-100);
+  text-align: center;
+}
+
+.gettingStartedCard .card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gettingStartedCard:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+.docButton {
+  margin-top: 1rem;
+}
+
+.sectionSubtitle {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary) 0%,
+    var(--ifm-color-primary-dark) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-800);
+}

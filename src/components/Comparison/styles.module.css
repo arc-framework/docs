@@ -1,0 +1,255 @@
+.section {
+  margin: 0;
+  padding: 2rem 0;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--ifm-color-emphasis-100) 50%,
+    transparent 100%
+  );
+}
+
+.sectionSubtitle {
+  background: linear-gradient(
+    135deg,
+    var(--ifm-color-primary) 0%,
+    var(--ifm-color-primary-dark) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  max-width: 900px;
+  margin: 1rem auto 0;
+  line-height: 1.8;
+  color: var(--ifm-color-emphasis-800);
+}
+
+/* Cards Wrapper for Centering */
+.cardsWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.cardColumn {
+  flex: 1;
+  max-width: 950px;
+  min-width: 0;
+}
+
+/* Split View Styles */
+.splitCard {
+  height: 100%;
+  min-height: 600px;
+  border-radius: 20px;
+  padding: 2.5rem 2rem;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.beforeCard {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 235, 238, 0.95) 0%,
+    rgba(255, 245, 247, 0.95) 100%
+  );
+  border: 2px solid rgba(239, 68, 68, 0.3);
+}
+
+[data-theme='dark'] .beforeCard {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 20, 20, 0.5) 0%,
+    rgba(40, 20, 20, 0.5) 100%
+  );
+  border: 2px solid rgba(239, 68, 68, 0.4);
+}
+
+.afterCard {
+  background: linear-gradient(
+    135deg,
+    rgba(236, 253, 245, 0.95) 0%,
+    rgba(240, 253, 250, 0.95) 100%
+  );
+  border: 2px solid rgba(34, 197, 94, 0.3);
+}
+
+[data-theme='dark'] .afterCard {
+  background: linear-gradient(
+    135deg,
+    rgba(20, 60, 40, 0.5) 0%,
+    rgba(20, 40, 30, 0.5) 100%
+  );
+  border: 2px solid rgba(34, 197, 94, 0.4);
+}
+
+.splitCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.15);
+}
+
+.beforeCard:hover {
+  border-color: rgba(239, 68, 68, 0.6);
+  box-shadow: 0 16px 48px rgba(239, 68, 68, 0.2);
+}
+
+.afterCard:hover {
+  border-color: rgba(34, 197, 94, 0.6);
+  box-shadow: 0 16px 48px rgba(34, 197, 94, 0.2);
+}
+
+.splitCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid currentColor;
+}
+
+.beforeCard .splitCardHeader {
+  color: rgb(239, 68, 68);
+}
+
+.afterCard .splitCardHeader {
+  color: rgb(34, 197, 94);
+}
+
+.splitCardHeader h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.splitIcon {
+  font-size: 2.5rem;
+}
+
+.splitCardBody {
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.splitList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem 0;
+  flex: 1;
+}
+
+.splitList li {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+.listIcon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.beforeCard .listIcon {
+  color: rgb(239, 68, 68);
+}
+
+.afterCard .listIcon {
+  color: rgb(34, 197, 94);
+}
+
+.splitCardFooter {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 12px;
+  padding: 1.25rem;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.6;
+}
+
+[data-theme='dark'] .splitCardFooter {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.splitCardFooter strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.beforeCard .splitCardFooter strong {
+  color: rgb(220, 38, 38);
+}
+
+.afterCard .splitCardFooter strong {
+  color: rgb(22, 163, 74);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 996px) {
+  .sectionSubtitle {
+    font-size: 1.6rem;
+  }
+
+  .subtitle {
+    font-size: 1.1rem;
+  }
+
+  .cardsWrapper {
+    flex-direction: column;
+    max-width: 600px;
+  }
+
+  .cardColumn {
+    max-width: 100%;
+  }
+
+  .splitCard {
+    margin-bottom: 2rem;
+    min-height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 2rem 0;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .cardsWrapper {
+    padding: 0 0.5rem;
+  }
+
+  .splitCard {
+    padding: 1.5rem;
+  }
+
+  .splitCardHeader h3 {
+    font-size: 1.5rem;
+  }
+}

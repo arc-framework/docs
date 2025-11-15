@@ -1,48 +1,27 @@
-import clsx from 'clsx';
+import React from 'react';
 
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import CallToAction from '@site/src/components/CallToAction';
+import Comparison from '@site/src/components/Comparison';
+import Features from '@site/src/components/Features';
+import Hero from '@site/src/components/Hero';
+import Introduction from '@site/src/components/Introduction';
+import UseCases from '@site/src/components/UseCases';
+import Workflow from '@site/src/components/Workflow';
 import Layout from '@theme/Layout';
 
-import styles from './index.module.css';
-
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className='container'>
-        <img
-          src='https://raw.githubusercontent.com/arc-framework/.github/main/assets/arc-icon.png'
-          alt='A.R.C. Logo'
-          width='150'
-          className={styles.heroLogo}
-        />
-        <h1 className='hero__title'>{siteConfig.title}</h1>
-        <p className='hero__subtitle'>{siteConfig.tagline}</p>
-        <p className={clsx(styles.heroOss, 'hero__subtitle')}>
-          Truly open-source—built by the community, for the community.
-        </p>
-        <div className={styles.buttons}>
-          <Link
-            className='button button--secondary button--lg'
-            to='/docs/intro'>
-            Get Started
-          </Link>
-        </div>
-      </div>
-    </header>
-  );
-}
 export default function Home(): React.JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Home`}
+      title='Home'
       description="An open-source, 'Platform-in-a-Box' for building, deploying, and orchestrating production-ready AI agents.">
-      <HomepageHeader />
+      <Hero />
       <main>
-        <HomepageFeatures />
+        <Introduction />
+        <Features />
+        <Workflow />
+        <Comparison />
+        <UseCases />
+        <CallToAction />
       </main>
     </Layout>
   );

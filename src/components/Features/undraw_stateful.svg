@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 888 710.80704">
+  <rect x="244" y="180" width="400" height="350" rx="15" fill="#f2f2f2"/>
+  <rect x="270" y="210" width="348" height="60" rx="8" fill="#6c63ff"/>
+  <circle cx="305" cy="240" r="18" fill="#fff"/>
+  <path d="M305,232 L305,248 M297,240 L313,240" stroke="#6c63ff" stroke-width="2" stroke-linecap="round"/>
+  <text x="340" y="247" font-family="Arial" font-size="16" fill="#fff" font-weight="bold">Agent Memory State</text>
+  <rect x="290" y="295" width="308" height="45" rx="5" fill="#fff"/>
+  <circle cx="315" cy="317.5" r="10" fill="#6c63ff"/>
+  <rect x="340" y="308" width="240" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="340" y="321" width="180" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="290" y="355" width="308" height="45" rx="5" fill="#fff"/>
+  <circle cx="315" cy="377.5" r="10" fill="#6c63ff"/>
+  <rect x="340" y="368" width="240" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="340" y="381" width="200" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="290" y="415" width="308" height="45" rx="5" fill="#fff"/>
+  <circle cx="315" cy="437.5" r="10" fill="#6c63ff"/>
+  <rect x="340" y="428" width="240" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="340" y="441" width="220" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="290" y="475" width="308" height="45" rx="5" fill="#fff"/>
+  <circle cx="315" cy="497.5" r="10" fill="#6c63ff"/>
+  <rect x="340" y="488" width="240" height="8" rx="4" fill="#e6e6e6"/>
+  <rect x="340" y="501" width="160" height="8" rx="4" fill="#e6e6e6"/>
+  <path d="M200,240 L244,240" stroke="#6c63ff" stroke-width="3" fill="none"/>
+  <polygon points="244,240 234,235 234,245" fill="#6c63ff"/>
+  <circle cx="175" cy="240" r="25" fill="#6c63ff"/>
+  <path d="M165,240 L175,250 L190,230" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M644,350 L688,350" stroke="#6c63ff" stroke-width="3" fill="none"/>
+  <polygon points="688,350 678,345 678,355" fill="#6c63ff"/>
+  <rect x="688" y="320" width="100" height="60" rx="8" fill="#6c63ff"/>
+  <circle cx="738" cy="345" r="12" fill="#fff"/>
+  <circle cx="738" cy="355" r="12" fill="#fff"/>
+  <path d="M733,350 L738,355 L748,340" stroke="#6c63ff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
