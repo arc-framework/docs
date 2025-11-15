@@ -20,21 +20,6 @@ The feature management layer provides:
 
 ---
 
-## Implementation
-
-### [Unleash](./unleash/)
-
-**Status:** ✅ Active
-**Type:** Open-source feature flag platform
-
-- Strategy-based activation
-- Environment separation
-- User and property targeting
-- Gradual rollout support
-- SDK for many languages
-
----
-
 # Unleash - Feature Flags
 
 Feature flag management for gradual rollouts and A/B testing.

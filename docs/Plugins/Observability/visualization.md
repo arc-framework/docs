@@ -10,18 +10,6 @@ Dashboard and visualization platforms for observability data.
 
 Visualization plugins provide unified dashboards for viewing logs, metrics, and traces from observability backends.
 
-## Active Implementation
-
-### [Grafana](./grafana/)
-
-**Status:** ✅ Active  
-**Type:** Multi-datasource visualization platform
-
-- Unified dashboards
-- Multiple datasource support (Loki, Prometheus, Jaeger)
-- Alerting and notifications
-- Explore mode for ad-hoc queries
-
 ---
 
 # Grafana - Visualization Platform

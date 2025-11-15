@@ -24,6 +24,7 @@ const config: Config = {
   projectName: 'arc-docs',
 
   onBrokenLinks: 'throw',
+  onBrokenAnchors: 'throw',
 
   i18n: {
     defaultLocale: 'en',

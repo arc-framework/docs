@@ -15,11 +15,11 @@ Security plugins provide authentication, authorization, and identity management 
 
 ## Categories
 
-### [Identity](./identity/)
+### Identity
 
 Authentication and user management
 
-- **Active:** [Kratos](./identity/kratos/)
+- **Active:** Kratos
 - **Alternatives:** Keycloak, Auth0, AWS Cognito
 - **Status:** ✅ Active
 
@@ -35,7 +35,7 @@ Identity plugins provide user authentication, registration, and profile manageme
 
 ## Active Implementation
 
-### [Ory Kratos](./kratos/)
+### Ory Kratos
 
 **Status:** ✅ Active
 **Type:** Cloud-native identity server
@@ -48,7 +48,7 @@ Identity plugins provide user authentication, registration, and profile manageme
 
 ---
 
-# Ory Kratos Configuration
+# Ory Kratos Configuration {#ory-kratos-configuration}
 
 This directory contains the configuration files for [Ory Kratos](https://www.ory.sh/kratos/docs/), an open-source identity and user management system.
 
