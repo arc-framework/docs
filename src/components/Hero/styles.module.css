@@ -3,16 +3,38 @@
   text-align: center;
   position: relative;
   overflow: hidden;
-  background: transparent !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 600px;
   display: flex;
   align-items: center;
   margin: 0;
 }
 
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  opacity: 0.08;
+  z-index: 0;
+}
+
+.heroBanner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
 .heroContent {
   position: relative;
-  z-index: 10;
+  z-index: 2;
   width: 100%;
 }
 
@@ -28,7 +50,7 @@
   flex: 4;
   position: relative;
   animation: fadeInLeft 0.8s ease-out;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   min-height: 600px;
@@ -60,11 +82,12 @@
 }
 
 .heroTextSide {
-  flex: 8;
+  flex: 1;
+  width: 100%;
   text-align: center;
   position: relative;
   animation: fadeInRight 0.8s ease-out;
-  padding: 4rem 4rem 4rem 10rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,8 +183,8 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner {
-    padding: 2rem 0;
-    min-height: 500px;
+    padding: 0;
+    min-height: auto;
   }
 
   .heroLayout {
@@ -170,11 +193,20 @@
     text-align: center;
   }
 
-  .heroImageSide,
+  .heroImageSide {
+    flex: 1;
+    padding: 0;
+    text-align: center;
+    min-height: 400px;
+    order: 2;
+  }
+
   .heroTextSide {
-    padding: 2rem 1.5rem;
+    flex: 1;
+    padding: 3rem 1.5rem;
     text-align: center;
     min-height: auto;
+    order: 1;
   }
 
   .heroTitle {
