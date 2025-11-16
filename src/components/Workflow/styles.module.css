@@ -29,6 +29,9 @@
 /* Stepper Styles */
 .stepperContainer {
   padding: 2rem 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .stepper {
@@ -38,11 +41,13 @@
   gap: 1.5rem;
   max-width: 100%;
   margin: 0 auto;
+  min-width: min-content;
 }
 
 .stepperItem {
   flex: 0 0 auto;
   width: 380px;
+  min-width: 380px;
   display: flex;
   flex-direction: column;
   align-items: center;

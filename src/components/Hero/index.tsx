@@ -13,13 +13,16 @@ import styles from './styles.module.css';
 export default function Hero(): React.JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   const logoUrl = useBaseUrl('/img/arc-icon.png');
+  const heroBackgroundUrl = useBaseUrl('/img/arc-hero-background.png');
 
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header
+      className={clsx('hero', styles.heroBanner)}
+      style={{ backgroundImage: `url(${heroBackgroundUrl})` }}>
+      <ParticleSystem />
       <div className={styles.heroContent}>
         <div className={styles.heroLayout}>
           <div className={styles.heroTextSide}>
-            <ParticleSystem />
             <Heading as='h1' className={clsx('hero__title', styles.heroTitle)}>
               {siteConfig.title}
             </Heading>
