@@ -4,6 +4,9 @@ sidebar_position: 3
 
 # Messaging
 
+> **Codenames: The Flash (NATS)** — The Nervous System. Information travels at the speed of thought.
+> **Dr. Strange (Pulsar)** — Time Stone. Replays event history and sees 14 million outcomes.
+
 Message broker services for agent communication and event distribution.
 
 ---

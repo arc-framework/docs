@@ -2,13 +2,15 @@
 sidebar_position: 4
 ---
 
-# Visualization
+# Dashboards
+
+> **Codename: Friday** — The UI. The visual interface overlay for all your platform's vitals.
 
 Dashboard and visualization platforms for observability data.
 
 ## Overview
 
-Visualization plugins provide unified dashboards for viewing logs, metrics, and traces from observability backends.
+Visualization services provide unified dashboards for viewing logs, metrics, and traces from observability backends.
 
 ---
 
@@ -71,7 +73,7 @@ Username: admin
 Password: admin
 ```
 
-⚠️ **Change password on first login!**
+**Change password on first login!**
 
 ---
 
@@ -152,7 +154,7 @@ Search across all observability data:
 
 ### Basic Dashboard
 
-1. Click "+" → "Dashboard"
+1. Click "+" then "Dashboard"
 2. Add panel
 3. Select datasource (Prometheus, Loki, Jaeger)
 4. Write query

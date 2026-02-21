@@ -4,17 +4,21 @@ sidebar_position: 1
 
 # Logging
 
+> **Codename: Watson** — The Chronicler. Writes down every messy detail for later deduction.
+
+> **Hermes** (Promtail) — The Messenger. Delivers the logs to Watson.
+
 Log aggregation and storage backends.
 
 ## Overview
 
-Log storage plugins receive logs from the OpenTelemetry Collector and provide querying interfaces.
+Log storage services receive logs from the OpenTelemetry Collector and provide querying interfaces.
 
 ## Active Implementation
 
-### [Loki](./loki/)
+### Loki
 
-**Status:** ✅ Active  
+**Status:** ✅ Active
 **Type:** Cost-effective log aggregation
 
 - Label-based indexing
@@ -73,7 +77,7 @@ Loki receives logs from:
 
 - OpenTelemetry Collector (OTLP HTTP)
 - Promtail (log shipper)
-- Docker plugin
+- Docker logging driver
 - Direct HTTP API
 
 ---
@@ -177,7 +181,7 @@ environment    - Environment (dev, staging, prod)
 - **Don't Over-Label** - Too many labels hurt performance
 - **Use Filters** - Parse content with LogQL, don't label everything
 
-### Bad Examples ❌
+### Bad Examples
 
 ```
 user_id="123"           # High cardinality
@@ -185,7 +189,7 @@ request_id="abc-def"    # High cardinality
 timestamp="..."         # Already tracked
 ```
 
-### Good Examples ✅
+### Good Examples
 
 ```
 service_name="api"
@@ -270,13 +274,13 @@ topk(10,
 ### Optimize Queries
 
 ```logql
-# ✅ Good - Uses labels
+# Good - Uses labels
 {service_name="api", level="error"}
 
-# ❌ Bad - Full text search
+# Bad - Full text search
 {job="docker"} |= "error"
 
-# ✅ Better - Label + filter
+# Better - Label + filter
 {service_name="api"} |= "error"
 ```
 

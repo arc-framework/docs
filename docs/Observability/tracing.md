@@ -4,11 +4,13 @@ sidebar_position: 3
 
 # Tracing
 
+> **Codename: Columbo** — The Detective. "Just one more thing." Follows the request path wherever it leads.
+
 Distributed tracing storage and visualization backends.
 
 ## Overview
 
-Tracing storage plugins receive traces from the OpenTelemetry Collector and provide trace visualization and analysis.
+Tracing storage services receive traces from the OpenTelemetry Collector and provide trace visualization and analysis.
 
 ---
 

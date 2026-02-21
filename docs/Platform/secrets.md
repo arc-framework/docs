@@ -4,6 +4,8 @@ sidebar_position: 6
 
 # Secrets Management
 
+> **Codename: Nick Fury** — The Spymaster. Holds the nuclear codes. Paranoid for a reason.
+
 Secrets and configuration management services for the A.R.C. Framework.
 
 ---
@@ -22,7 +24,7 @@ The secrets layer provides secure storage and management of sensitive configurat
 
 # Infisical
 
-**Status:** ✅ Active  
+**Status:** ✅ Active
 **Type:** Self-hosted Secrets Management Platform
 
 ---

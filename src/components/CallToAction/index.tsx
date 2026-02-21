@@ -36,7 +36,7 @@ export default function CallToAction(): React.JSX.Element {
                     'button button--primary button--lg',
                     styles.docButton
                   )}
-                  to='/docs/intro'>
+                  to='/docs/getting-started/'>
                   Explore Documentation
                 </Link>
               </div>
