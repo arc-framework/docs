@@ -1,15 +1,17 @@
 ---
-sidebar_position: 1
+sidebar_position: 8
 ---
 
 # IAM
 
-Security and identity management plugins for the A.R.C. Framework.
+> **Codename: J.A.R.V.I.S.** — The Butler. "Welcome home, sir." Handles identity and authentication.
+
+Security and identity management services for the A.R.C. Framework.
 
 ## Overview
 
-Security plugins provide authentication, authorization, and identity management capabilities.
-**Note:** These are **plugins** - optional and swappable based on your needs.
+Security services provide authentication, authorization, and identity management capabilities.
+**Note:** These are **swappable** - alternative implementations can be used based on your needs.
 
 ---
 
@@ -31,7 +33,7 @@ Authentication and user identity management.
 
 ## Overview
 
-Identity plugins provide user authentication, registration, and profile management.
+Identity services provide user authentication, registration, and profile management.
 
 ## Active Implementation
 
@@ -44,7 +46,6 @@ Identity plugins provide user authentication, registration, and profile manageme
 - Multi-factor authentication
 - Session management
 - API-first design
-  **Note:** This is optional - you mentioned having other plans for identity/auth.
 
 ---
 

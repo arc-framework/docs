@@ -4,6 +4,8 @@ sidebar_position: 4
 
 # Persistence
 
+> **Codename: Oracle** — Long-Term Memory. The photographic record of truth.
+
 Data persistence services for the A.R.C. Framework.
 
 ---
@@ -16,7 +18,7 @@ The persistence layer provides relational database storage with vector search ca
 
 # PostgreSQL
 
-**Status:** ✅ Active  
+**Status:** ✅ Active
 **Type:** Relational Database with Vector Extensions
 
 ---

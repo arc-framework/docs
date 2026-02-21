@@ -4,11 +4,13 @@ sidebar_position: 2
 
 # Metrics
 
+> **Codename: Dr. House** — Diagnostics. Doesn't trust you; trusts the vitals. "It's never DNS."
+
 Metrics storage and querying backends.
 
 ## Overview
 
-Metrics storage plugins receive metrics from the OpenTelemetry Collector and provide time-series database capabilities.
+Metrics storage services receive metrics from the OpenTelemetry Collector and provide time-series database capabilities.
 
 ---
 

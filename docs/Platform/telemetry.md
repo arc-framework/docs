@@ -4,6 +4,8 @@ sidebar_position: 7
 
 # Telemetry
 
+> **Codename: Black Widow** — The Spy. Intercepts all signals and traces without being seen.
+
 Unified telemetry collection hub for the A.R.C. Framework.
 
 ---

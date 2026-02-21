@@ -4,6 +4,8 @@ sidebar_position: 5
 
 # Feature Management
 
+> **Codename: Mystique** — The Shapeshifter. Changes app behavior instantly without redeploying.
+
 Feature flags and A/B testing for the A.R.C. Framework.
 
 ---

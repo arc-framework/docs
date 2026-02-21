@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Caching
 
+> **Codename: Sonic** — Working Memory. "Gotta go fast." Holds context; if he stops, everything stops.
+
 In-memory caching and session storage for the A.R.C. Framework.
 
 ---

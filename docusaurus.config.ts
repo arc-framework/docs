@@ -73,6 +73,16 @@ const config: Config = {
           label: 'Docs',
         },
         {
+          to: '/docs/getting-started/',
+          label: 'Getting Started',
+          position: 'left',
+        },
+        {
+          to: '/docs/services',
+          label: 'Services',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/arc-framework/arc-docs',
           label: 'GitHub',
           position: 'right',
@@ -81,7 +91,29 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            { label: 'Getting Started', to: '/docs/getting-started/' },
+            { label: 'Platform Services', to: '/docs/Platform/' },
+            { label: 'CLI Reference', to: '/docs/CLI/' },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            { label: 'GitHub', href: 'https://github.com/arc-framework' },
+            { label: 'Contributing', href: 'https://github.com/arc-framework/.github/blob/main/CONTRIBUTING.md' },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            { label: 'Professional Services', to: '/docs/services' },
+          ],
+        },
+      ],
       copyright: `Copyright © ${new Date().getFullYear()} A.R.C (Agentic Reasoning Core)`,
     },
     prism: {

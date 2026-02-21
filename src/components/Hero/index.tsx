@@ -37,7 +37,7 @@ export default function Hero(): React.JSX.Element {
             <div className={styles.buttons}>
               <Link
                 className='button button--outline button--secondary button--lg'
-                to='/docs/stack'>
+                to='/docs/getting-started/'>
                 <svg
                   width='16'
                   height='16'

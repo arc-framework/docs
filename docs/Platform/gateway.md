@@ -4,6 +4,8 @@ sidebar_position: 1
 
 # Gateway
 
+> **Codename: Heimdall** — The Gatekeeper. Opens the Bifrost only for authorized traffic.
+
 API Gateway and reverse proxy services for the A.R.C. Framework.
 
 ## Overview
@@ -20,7 +22,7 @@ The gateway layer provides:
 
 # Traefik
 
-**Status:** ✅ Active  
+**Status:** ✅ Active
 **Type:** Cloud-native API Gateway and Reverse Proxy
 
 ---
